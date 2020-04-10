@@ -71,6 +71,8 @@ for c in cities:
 # Tucson: (32.1558,-110.8777)
 # Salt Lake City: (40.7774,-111.9301)
 
+print("\n\n ============= Stretch ============= \n\n")
+
 # TODO Get latitude and longitude values from the user
 
 def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
@@ -88,4 +90,4 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   return within
 
 for city in cityreader_stretch(45, -100, 32, -120, cityreader()):
-	print(city.name)
+	print(f"{city.name}: ({city.lat, city.lon})")
